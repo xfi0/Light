@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <script src="Index.js"></script>
+<link rel="stylesheet" href="https://lightning-fast.nekoweb.org/Light/Index.css">
+</head>
+<div id="grad1">
+  <div class="search-container">
+    <div class="search-home">
+      <input type="text" class="searchbar" id="searchbar" placeholder="Open in about blank" onkeydown="aboutblank()">
+</div>
+<script>
+      var key = document.getElementById("searchbar");
+key.onkeyup = function(e){
+    if(e.keyCode == 13){
+   var win = window.open ()
+   var url = "https://" + searchbar.value;
+   var iframe = win.document.createElement('iframe')
+   iframe.style.width = "100%"
+   iframe.style.height = "100%"
+   iframe.style.border = "none"
+   iframe.src = url
+   win.document.body.appendChild(iframe)
+    }
+}
+function getlink(){
+  var inputlink = document.getElementById(searchbar).value
+}
+
+</script>

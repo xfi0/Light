@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*{
+  margin: 0;
+}
+.search-container{
+  border-width: 0px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+.search-home {
+  border-width: 0px;
+   width: 400px;
+   height: 60px;
+   border-radius: 35px;
+   font-family: "Poppins", sans-serif;
+   font-size: 16px;
+   box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.2);
+   background: (10px) brightness(80%);
+}
+.search-home input{
+  width: 400px;
+  height: 60px;
+  border-radius: 35px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.2);
+  background: var(--background-input);
+  -webkit-backdrop-filter: var(--backdrop-filter);
+  backdrop-filter: var(--backdrop-filter);
+
+}
+
+html{
+    background-color: purple;
+    min-height: 100%;
+    min-width: 100%;
+}
+iframe{
+  position:fixed;
+   top:0; 
+   left:0; 
+   bottom:0; 
+   right:0; 
+   width:100%; 
+   height:100%; 
+   border:none; 
+   margin:0; 
+   padding:0; 
+   overflow:hidden; 
+   z-index:999999;
+}
+.lightning{
+    display:block ;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 10vh;
+    z-index: 999999999;
+    margin-top: 20%;
+    text-align: center;
+    }
+    .lightning:hover{
+      transform: scale(1.03);
+    }
+  #grad1 {
+  min-height: 100%;
+  min-width : 100%;
+  height: auto;
+  width: auto;
+  position: absolute;
+  background-color: black; /* For browsers that do not support gradients */
+  background-image: linear-gradient(black, purple);
+  z-index: -100000000000;
+}
+ul {  
+  list-style-type: none;
+}
+div{
+  padding: 0px;
+}
+ nav>ul {
+  top: 0;
+   letter-spacing: 2px;
+   font-size: 25px;
+   font-family: "Inter", sans-serif;
+   min-height: 10vh;
+   padding: 0 25px;
+   box-sizing: border-box;
+   background-color: var(--background-nav);
+   box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+   -webkit-backdrop-filter: var(--backdrop-filter);
+   backdrop-filter: var(--backdrop-filter);
+   transition: 0.35s cubic-bezier(1, 1.72, 1, -1.03);
+   border-radius: 15px;
+   width: fill;
+   margin: 15px;
+   z-index: 100;
+   position: fixed;
+}
+
+nav>ul>li {
+  font-family: "Inter", sans-serif;
+  width: fit-content;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  background-color:  rgba(255, 255, 255, 0.02);
+  border-radius: 13px;
+  padding: 0 1px;
+}
+
+nav>ul>li:hover>ul {
+  display: block;
+  width: fill;
+  font-family: "Inter", sans-serif;
+}
+
+nav ul li a {
+  margin-top: 5%;
+  width: fit-content;
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  color: purple;
+}
+
+nav ul li a:hover {
+  color: White;
+  width: fit-content;
+  background-color: purple;
+}
+
+nav>ul>li>ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+nav>ul>li>ul>li {
+  position: relative;
+  background-color:  rgba(255, 255, 255, 0.02);
+  font-family: "Inter", sans-serif;
+}
+
+nav>ul>li>ul>li:hover>ul {
+  display: block;
+}
+
+nav>ul>li>ul>li>ul>li {
+  background-color: white;
+}
+
+nav>ul>li>ul>li>ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  display: none;
+}
+:root {
+   /* Background Variables */
+   --backdrop-filter: blur(10px) brightness(80%); /* Nav Backdrop filter */
+   --background-nav: rgba(255, 255, 255, 0.02); /* Nav Background */
+   --background-color: #222; /* Main Background Color */
+   --background-input: #4545459e; /* Input Field Background Color */
+   --background-column: #353535; /* Background for Apps Container */
+   --background-settings: #2a2a2a; /* Settings Card Background */
+   --background-buttons: #333; /* Button Background Color */
+   --tab-active-background: #444; /* Accent Color for Tabs */
+   --tab-inactive-background: ; /* Background Color for Tabs Not In Use */
+   --slider-active-background: #4caf50; /* Active Slider Background Color */
+   --slider-inactive-background: #ccc; /*  Slider Background Color */
+   --nav-image: url("/./assets/media/favicon/main.png"); /* Nav Logo */
+   --text-primary: #fff; /* Primary Text Color */
+   --text-dark: #555; /* Dark Text Color for Error Page, Scrollbar, and Particles */
+   --text-placeholder: #aaa; /* Placeholder Text Color */
+   --save-button: #4caf50; /* Save Button, Typically Green */
+   --reset-button: #f44336; /* Reset Button, Typically Red */
+   --import-button: #009688; /* Import Button, Typically Teal */
+   --export-button: #ea76cb; /* Export Button, Typically Pink */
+}
+.Games-Container{ 
+  position: absolute;
+    display: flex;
+    margin-top: 15%;
+    gap: 60px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.Games-Container img {
+  border-radius: 25px;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .icon:hover{
+    scale: 1.1;
+    transition: 0.75s;
+    cursor: pointer;
+  }
+  .lf{
+  width: 10%;
+  height: 10%;
+  }
+  .lf:hover{
+    scale: 1.1;
+    transition: 0.75s;
+    cursor: pointer;
+  }
+  .cog{
+margin-top: 5%;
+width: 5%;
+height: 5%;
+float: right;
+
+  }
+  .cog:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+  }
+  
