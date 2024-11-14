@@ -1,24 +1,25 @@
 <!DOCTYPE html>
+<html>
 <head>
   <script src="Index.js"></script>
 <link rel="stylesheet" href="Index.css">
  <link rel="icon" href="img/LF.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Lightning-Home</title>
 </head>
 <body>
   <nav>
     <ul>
-      <img class="lf" src="./img/LF.png" alt="Logo" onclick="window.open('index.html')">
+      <img class="AG" src="./img/LF.png" alt="Logo" onclick="window.open('index.html')">
       <li><a href="index.html">Home</a></li>
       <li><a href="Info.html">About</a></li>
       <li><a href="">Proxies</a>
         <ul>
-          <li><a href="Emerald%20Links.html">Emerald links</a></li>  
-          <li><a href="Shadow%20Links.html">Shadow links</a></li>
-          <li><a href="Doge%20Proxies.html">Doge Proxies</a></li>
-          <li><a href="Interstellar%20links.html">Interstellar</a></li>
+          <li><a href="Emerald-Links.html">Emerald links</a></li>  
+          <li><a href="Shadow-Links.html">Shadow links</a></li>
+          <li><a href="Doge-Proxies.html">Doge Proxies</a></li>
+          <li><a href="Interstellar-links.html">Interstellar</a></li>
         </ul>
       </li>
       <li><a href="Games.html">Games</a>
@@ -53,16 +54,16 @@
     <h1 class="lightning">LIGHTNING</h1>
     <div class="search-container">
     <div class="search-home">
-      <input type="text" class="searchbar" id="searchbar" placeholder="Search For Game">
+      <input type="text" class="searchbar" id="searchbar" placeholder="Search For Game" onkeydown="searchHeaders()">
       </div>
     </div>
     <div class="Games-Container">
-      <div class="icon"><img src="./img/1v1.lol.png" alt="1v1.lol" onclick="window.open('./games/1v1.lol.html')"></div>
-      <div class="icon"><img src="./img/Monkey.jpeg" alt="Monkey Mart" onclick="window.open('./games/monkeymart.html')"></div>
-      <div class="icon"><img src="./img/Slope.png" alt="Slope" onclick="window.open('./games/slope.html')"></div>
-      <div class="icon"><img src="./img/Snake.png" alt="Snake" onclick="window.open('./games/snake.html')"></div>
-      <div class="icon"><img src="./img/paper.png" alt="paper.io-2" onclick="window.open('./games/paper.io.html')"></div>
-      <div class="icon"><img src="./img/MFP.png" alt="My Friend Pedro" onclick="window.open('./games/myfriendpedro.html')"></div>
+      <div class="icon"><img src="./img/1v1.lol.png" alt="1v1.lol" class="games-game" onclick="window.open('./games/1v1.lol.html')"><h4 class="gname">1v1.lol</h4></div>
+      <div class="icon"><img src="./img/Monkey.jpeg" alt="Monkey Mart" class="games-game" onclick="window.open('./games/monkeymart.html')"><h4 class="gname">Monkey Mart</h4></div>
+      <div class="icon"><img src="./img/Slope.png" alt="Slope" class="games-game" onclick="window.open('./games/slope.html')"><h4 class="gname">Slope</h4></div>
+      <div class="icon"><img src="./img/Snake.png" alt="Snake"class="games-game"  onclick="window.open('./games/snake.html')"><h4 class="gname">Snake</h4></div>
+      <div class="icon"><img src="./img/paper.png" alt="paper.io-2" class="games-game" onclick="window.open('./games/paper.io.html')"><h4 class="gname">Paper.io-2</h4></div>
+      <div class="icon"><img src="./img/MFP.png" alt="My Friend Pedro" class="games-game" onclick="window.open('./games/myfriendpedro.html')"><h4 class="gname">My Friend Pedro</h4></div>
       <div class="icon"><img src="./img/MX33.png" alt="Moto X3M 3" onclick="window.open('./games/MX3M3.html')"></div>
       <div class="icon"><img src="./img/SR3D.png" alt="Snow Rider 3D" onclick="window.open('./games/SR3D/index.html')"></div>
       <div class="icon"><img src="./img/CC.png" alt="Cookie Clicker" onclick="window.open('games/cookie-clicker/index.html')"></div>
@@ -78,8 +79,11 @@
       <div class="icon"><img src="./img/BL.png" alt="Bitlife" onclick="window.open('games/Bitlife/index.html')"></div>
       <div class="icon"><img src="./img/SM64.png" alt="Super Mario 64" onclick="window.open('games/SM64/index.html')"></div>
       <div class="icon"><img src="./img/RS.png" alt="Rooftop Snipers" onclick="window.open('games/RS.html')"></div>
+      <div class="icon"><img src="./img/HR3D.png" alt="Highway racers 3D!" onclick="window.open('games/HR3D/index.html')"></div>
+
 
 
     </div>
     </div>
+    </html>
 </body>

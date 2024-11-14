@@ -238,4 +238,13 @@ float: right;
     cursor: pointer;
     transform: rotate(360deg);
   }
-  
+  .gname{
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    
+  }
+  .gname:hover{
+    transform: scale(1.03);
+  }
