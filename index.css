@@ -12,26 +12,23 @@
    align-items: center;
 }
 .search-home {
+  padding: 20px;
   border-width: 0px;
-   width: 400px;
-   height: 60px;
-   border-radius: 35px;
+   width: 50vw;
+   height: 5vh;
    font-family: "Poppins", sans-serif;
    font-size: 16px;
-   box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.2);
-   background: (10px) brightness(80%);
 }
 .search-home input{
-  width: 400px;
-  height: 60px;
-  border-radius: 35px;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.2);
-  background: var(--background-input);
-  -webkit-backdrop-filter: var(--backdrop-filter);
-  backdrop-filter: var(--backdrop-filter);
-
+  width: 600px;
+  height: 65px;
+  border-radius: 5px;
+  border-width: 0px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  box-shadow: 0 0 15px 2px rgba(128, 0, 128, 0.2);
+  background-color: hsl(300, 100%, 25%);
 }
 
 html{
@@ -54,11 +51,12 @@ iframe{
    z-index:999999;
 }
 .lightning{
+  padding: 20px;
     display:block ;
     color: white;
     font-family: "Inter", sans-serif;
     font-weight: bold;
-    font-size: 10vh;
+    font-size: 15vh;
     z-index: 999999999;
     margin-top: 20%;
     text-align: center;
@@ -182,7 +180,6 @@ nav>ul>li>ul>li>ul {
    --tab-inactive-background: ; /* Background Color for Tabs Not In Use */
    --slider-active-background: #4caf50; /* Active Slider Background Color */
    --slider-inactive-background: #ccc; /*  Slider Background Color */
-   --nav-image: url("/./assets/media/favicon/main.png"); /* Nav Logo */
    --text-primary: #fff; /* Primary Text Color */
    --text-dark: #555; /* Dark Text Color for Error Page, Scrollbar, and Particles */
    --text-placeholder: #aaa; /* Placeholder Text Color */
@@ -192,6 +189,7 @@ nav>ul>li>ul>li>ul {
    --export-button: #ea76cb; /* Export Button, Typically Pink */
 }
 .Games-Container{ 
+  width: 100%;
   position: absolute;
     display: flex;
     margin-top: 15%;
@@ -247,4 +245,14 @@ float: right;
   }
   .gname:hover{
     transform: scale(1.03);
+  }
+  .splash{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-left: auto;
+    font-family: Inter, sans-serif;
+  }
+  ::placeholder{
+    color: white;
   }
